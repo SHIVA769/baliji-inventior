@@ -9,6 +9,7 @@
   "scripts": {
     "install:all": "npm install --workspace server && npm install --workspace client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "npm --prefix server start",
     "server": "cd server && npm run dev",
     "client": "cd client && npm run dev"
   },
